@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+<head>
+  <title>Windows Username</title>
+</head>
+<body>
+<input id="username" type="hidden" value="@User.Identity.Name" />
+
+<script type="text/javascript">
+  var WinNetwork = new ActiveXObject("WScript.Network");
+  alert(WinNetwork.UserName);
+</script>
+</body>
+</html>
